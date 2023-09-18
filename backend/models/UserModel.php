@@ -21,13 +21,14 @@ class UserModel extends Model
      * @param object $body The request body containing user data.
      * @return bool True on success, false on failure.
      */
-    public function store($body)
+    public function store($body, $token)
     {
         $user = new UserDto();
         $user->name = $body->name;
         $user->last_name = $body->last_name;
         $user->username = $body->username;
         $user->password = md5($body->password);
+        $user->token = $token;
         return $this->orm->insert('users', $user);
     }
 

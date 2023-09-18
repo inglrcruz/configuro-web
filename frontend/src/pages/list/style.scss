@@ -1,0 +1,94 @@
+@import '../../colors.scss';
+
+#list {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: $white;
+
+    .table-footer {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        label {
+            font-size: 15px;
+        }
+
+        select {
+            padding: 5px 10px 5px 10px;
+            background-color: $white;
+            border-radius: 5px;
+            border: solid 1px gainsboro;
+        }
+    }
+
+    #table-users {
+
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+            color: $white;
+            background-color: $main-color-dark;
+            border-bottom: solid 1px #eee;
+
+            th {
+                font-size: 15px;
+                padding: 10px;
+                text-align: left;
+            }
+
+            &:first-child {
+                text-align: center;
+            }
+        }
+
+        tbody {
+
+            td {
+                padding: 10px;
+                border-bottom: solid 1px #eee;
+            }
+
+            .disabled-text {
+                color: $main-color-cancel;
+            }
+
+            .enabled-text {
+                color: $main-color;
+            }
+
+            tr:hover {
+                background-color: #fdf8d7;
+            }
+
+            .delete-button {
+
+                padding: 10px;
+                border: none;
+                background-color: $main-color-cancel;
+                border-radius: 5px;
+                cursor: pointer;
+
+                .fa-trash {
+                    font-size: 15px;
+                    color: $white;
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                &:disabled {
+                    cursor: not-allowed;
+                    opacity: 0.5;
+                }
+            }
+
+        }
+
+    }
+
+}

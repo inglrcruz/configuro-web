@@ -30,3 +30,7 @@ $ docker-compose up
 
 # Front end:
 - http://localhost:3000/
+
+# App
+- First change the ip of the api to the next rura src/libraryrequests.ts.
+- yarn run android or npm run android

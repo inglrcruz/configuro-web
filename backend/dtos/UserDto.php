@@ -14,6 +14,7 @@ class UserDto
   public $last_name = "";
   public $username = "";
   public $password = "";
+  public $token = "";
 
   /**
    * Validates a request body for required fields (name, last_name, username, and password).

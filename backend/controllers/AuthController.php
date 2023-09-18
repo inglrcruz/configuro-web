@@ -43,7 +43,7 @@ class AuthController extends Controller
             if (!$user->active) $this->response(["message" => "This account is disabled. Please contact support for more information."], 403);
             $token = uniqid(bin2hex(random_bytes(16)), true);
             $this->model->updateToken($token, $user->user_id);
-            $this->response(["token" => $token], 201);
+            $this->response(["token" => $token]);
         }
     }
 

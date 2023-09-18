@@ -1,0 +1,65 @@
+@import '../../colors.scss';
+
+#header {
+    padding: 20px;
+    margin-bottom: 50px;
+    background: $main-color-dark;
+    border-bottom: solid 1px #eee;
+
+    #header-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+
+        strong {
+            color: white;
+        }
+    }
+
+    #header-container {
+        max-width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        #header-nav ul {
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+
+                span {
+                    padding: 10px 20px 10px 20px;
+                    border-radius: 25px 0px 25px 0px;
+                    color: white;
+                    font-weight: bold;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+
+                &:hover span {
+                    background: $main-color-light;
+                }
+            }
+
+            .active span {
+                background: $main-color-light;
+            }
+
+        }
+    }
+}

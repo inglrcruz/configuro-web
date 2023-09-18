@@ -33,5 +33,6 @@ class Controller
     {
         if ($code) http_response_code($code);
         if ($body) echo json_encode($body);
+        exit;
     }
 }

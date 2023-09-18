@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
-//import Header from '../../components/header';
 import './style.scss'
 
 const NotFound = () => {
-    //<Header></Header>
+
     return (<>
 
         <section className="main" id="not-found">

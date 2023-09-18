@@ -54,8 +54,9 @@ class UserController extends Controller
             if ($exist) {
                 $this->response(["message" => "This username is already in use."], 404);
             } else {
-                $this->model->store($this->body());
-                $this->response([], 201);
+                $token = uniqid(bin2hex(random_bytes(16)), true);
+                $this->model->store($this->body(), $token);
+                $this->response(["token" => $token]);
             }
         }
     }
