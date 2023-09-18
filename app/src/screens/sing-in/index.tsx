@@ -85,11 +85,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
     },
-
-    buttonLink: {
-        marginTop: 40
-    },
-
+    
     card: {
         margin: 10,
         backgroundColor: "white",

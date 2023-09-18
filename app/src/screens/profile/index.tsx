@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { connect, useDispatch } from 'react-redux'
 import { setSignOff } from '../../redux/actions/users'
 import { Alert, StyleSheet, Text, TouchableHighlight, View } from 'react-native';
-import { StackNavigationProp } from '@react-navigation/stack';
 import { ProfileProps } from '../../interfaces/signInInterface';
 
 const styles = StyleSheet.create({
